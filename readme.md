@@ -34,13 +34,13 @@ Com este método, você utiliza o atributo id do nó que está localizando. Como
 Por exemplo, suponhamos que você queira localizar um nó de um título na sua página HTML:
 
 ```html
-<h1 id="title-js4girls">JS4Girls</h1>
+<h1 id="title-js">JS</h1>
 ```
 
-O título acima tem o id = `title-js4girls`, se eu quiser localizar este título utilizando seu atributo id em Javascript, faremos o seguinte:
+O título acima tem o id = `title-js`, se eu quiser localizar este título utilizando seu atributo id em Javascript, faremos o seguinte:
 
 ```js
-var titulo = document.getElementById('title-js4girls');
+var titulo = document.getElementById('title-js');
 ```
 
 
@@ -63,7 +63,7 @@ Quando digo antigos, estou me referindo a versões anteriores ao Internet Explor
 
 
 ```html
-<h1 id="title-js4girls" class="title-primary">JS4Girls</h1>
+<h1 id="title-js" class="title-primary">JS</h1>
 ```
 
 ```js
@@ -123,7 +123,7 @@ Vaos usar um exemplo anterior
 
 
 ```js
-var titulo = document.getElementById('title-js4girls');
+var titulo = document.getElementById('title-js');
 
 titulo.innerHTML = "Mudei aqui";
 ```
@@ -134,9 +134,9 @@ Depois que localizamos o nosso elemento podemos manipular eles com alguns métod
 Captura ou altera o texto de dentro do nosso elemento:
 
 ```js
-var titulo = document.getElementById('title-js4girls');
+var titulo = document.getElementById('title-js');
 
-console.log(titulo.innerText); //JS4Girls
+console.log(titulo.innerText); //JS
 
 titulo.innerText = "Mudei aqui";
 ```
@@ -145,14 +145,14 @@ titulo.innerText = "Mudei aqui";
 Captura ou altera o valor de dentro do nosso elemento. Criamos um elemento que possua a propriedade `value`:
 
 ```html
-<input type="text" id="nome" value="JS4Girls" />
+<input type="text" id="nome" value="JS" />
 ```
 Agora nós pegamos o elemento e modificamos seu `value`.
 
 ```js
 var nome = document.getElementById('nome');
 
-console.log(nome.value); //JS4Girls
+console.log(nome.value); //JS
 
 nome.value = "Mudei aqui";
 ```
@@ -270,7 +270,7 @@ var z = document.getElementById('myUL').firstChild.nodeName;
 console.log(z); //LI
 ```
 
-**[Exercício] Selecione o elemento com id `neto` e navegue pelo DOM até o avô dele e altere o texto do primeiro filho, o elemento `h1`, para `JS4Girls`.**
+**[Exercício] Selecione o elemento com id `neto` e navegue pelo DOM até o avô dele e altere o texto do primeiro filho, o elemento `h1`, para `JAVASCRIPT`.**
 
 ```html
 <div>
